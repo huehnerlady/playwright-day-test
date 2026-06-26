@@ -33,6 +33,6 @@ jobs:
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
-        name: screenshots
+        name: html-files
         path: tests/tag*.html
         retention-days: 10
