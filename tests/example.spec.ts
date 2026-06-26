@@ -25,7 +25,7 @@ test('tag1', async ({ page }) => {
   await page.screenshot({ path: 'screenshot-tag1.png', fullPage: true });
   const html = await page.content()
   // html.replace('./images', 'https://www.cuba-hp.de/24Stunden2/images')
-  fs.writeFileSync(join(__dirname, 'tag2.html'), html, {
+  fs.writeFileSync(join(__dirname, 'tag1.html'), html, {
     flag: 'w',
   });
 });
