@@ -30,3 +30,9 @@ jobs:
         name: screenshots
         path: screenshot*.png
         retention-days: 10
+    - uses: actions/upload-artifact@v4
+      if: ${{ !cancelled() }}
+      with:
+        name: screenshots
+        path: tests/tag*.html
+        retention-days: 10
