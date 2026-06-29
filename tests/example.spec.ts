@@ -13,7 +13,7 @@ const testData = [
         description: 'tag2',
         url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=2fd139f9c633e9847aee9e10d1a10340',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solution: ''
+        solution: 'Nachname'
     },
     // {
     //     description: 'tag3',
