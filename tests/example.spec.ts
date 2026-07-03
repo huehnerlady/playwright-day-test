@@ -7,13 +7,13 @@ const testData = [
         description: 'tag1',
         url: 'http://www.cuba-hp.de/24Stunden/index.php?code=2593b7089f7b083ead87f4cec823fd43',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solution: ''
+        solution: 'shorty'
     },
     {
         description: 'tag2',
-        url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=2fd139f9c633e9847aee9e10d1a10340',
+        url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=7c171227d3bc5342a164395ced986940',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solution: 'Nachname'
+        solution: ''
     },
     // {
     //     description: 'tag3',
