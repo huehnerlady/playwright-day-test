@@ -5,9 +5,9 @@ import {join} from "node:path";
 const testData = [
     {
         description: 'tag1',
-        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=2593b7089f7b083ead87f4cec823fd43',
+        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=8b1471129d24fOc122bfc9829cb51eda',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solution: 'shorty'
+        solution: ''
     },
     {
         description: 'tag2',
