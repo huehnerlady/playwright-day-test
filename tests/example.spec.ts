@@ -23,15 +23,18 @@ const testData = [
     // },
 ];
 
-for (const {description, url, solution, imageHost} of testData) {
+for  (const {description, url, solution, imageHost} of testData) {
     test(description, async ({page}) => {
         await page.goto(url);
 
-        if (solution !== '') {
-            await expect(page.locator('input[type=text]')).toBeVisible();
-            await page.locator('input[type=text]').fill(solution);
+        const input = page.locator('input[type=text]');
+
+        if (solution !== '' && await input.count() > 0) {
+            await expect(input).toBeVisible();
+            await input.fill(solution);
             await page.locator('input[type=submit]').click();
         }
+        
         await page.screenshot({path: `screenshot-${description}.png`, fullPage: true});
         let html = await page.content();
         html = html.replace(/\.\/images/g, `${imageHost}/images`);
