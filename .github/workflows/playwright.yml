@@ -21,8 +21,10 @@ jobs:
         DATA=$(curl -s -H "Authorization: Bearer $TOKEN" "$API_URL")
       
         CREATED_AT=$(echo "$DATA" | jq -r '.created_at')
+        EVENT=$(echo "$DATA" | jq -r '.event')
         STARTED_AT=$(echo "$DATA" | jq -r '.run_started_at')
       
+        echo "Event: $EVENT"
         echo "Geplante Trigger-Zeit (UTC): $CREATED_AT"
         echo "Tatsächliche Startzeit (UTC): $STARTED_AT"
     - uses: actions/checkout@v7.0.0
