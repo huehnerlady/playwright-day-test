@@ -21,6 +21,12 @@ const testData = [
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
         solution: '6-10'
     },
+    {
+        description: 'tag2-3',
+        url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=7c171227d3bc5342a164395ced986940',
+        imageHost: 'http://www.cuba-hp.de/24Stunden2',
+        solution: '6-17'
+    },
     // {
     //     description: 'tag3',
     //     url: 'https://www.cuba-hp.de/24Stunden3/index.php?code=bfb93b6dfcb468756e479beb490040ff2616',
