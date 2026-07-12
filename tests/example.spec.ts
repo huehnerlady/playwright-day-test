@@ -7,7 +7,7 @@ const testData = [
         description: 'tag1',
         url: 'https://www.cuba-hp.de/24Stunden/index.php?code=8b1471129d24f0c122bfc9829cb51eda',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solution: ''
+        solution: 'Stumpfer Specht'
     },
     {
         description: 'tag2',
