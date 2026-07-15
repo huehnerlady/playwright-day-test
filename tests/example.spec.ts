@@ -14,7 +14,7 @@ const testData: TestData[] = [
         description: 'tag1',
         url: 'http://www.cuba-hp.de/24Stunden/index.php?code=d8bc48b4cadefa1c6960f229606faf61',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['4298', '4296']
+        solutions: ['4298', '4296', '4310', '4308']
     },
     {
         description: 'tag2',
@@ -54,4 +54,44 @@ for (const {description, url, solutions, imageHost} of testData) {
         }
     });
 }
+
+test('tag1-for', async ({page}) => {
+    test.setTimeout(1200000);
+    const testData: TestData = {
+        description: '',
+        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=d8bc48b4cadefa1c6960f229606faf61',
+        imageHost: 'http://www.cuba-hp.de/24Stunden',
+    }
+    const {url, imageHost} = testData;
+    await page.goto(url);
+
+    const A = 1;
+    const input = page.locator('input[type=text]');
+    if (await input.count() > 0) {
+        for (let B = 1; B <= 9; B++) {
+            for (let C = 1; C <= 9; C++) {
+                for (let D = 1; D <= 9; D++) {
+                    for (let E = 1; E <= 9; E++) {
+                        for (let F = 1; F <= 9; F++) {
+                            await page.goto(url);
+                            const solution = (D + F) * 360 - (E * B) / A - C
+                            await input.fill(`${solution}`);
+                            await page.locator('input[type=submit]').click();
+
+                            const fail = page.getByText('Leider die falsche Antwort!')
+                            if (await fail.count() > 0) {
+                                console.log(`tag1-for-${solution} wrong`)
+                            } else {
+                                console.log(`tag1-for-${solution} correct`)
+                                await takeData(`tag1-for-${solution}`, imageHost, page);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } else {
+        await takeData(`tag1-for-no-textfield`, imageHost, page);
+    }
+})
 
