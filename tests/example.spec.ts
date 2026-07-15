@@ -42,12 +42,12 @@ for (const {description, url, solutions, imageHost} of testData) {
 
         if (solutions.length > 0 && await input.count() > 0) {
             for (const solution of solutions) {
-                const index = solutions.indexOf(solution);
+                const suffix = solution.replace(/ /g, "_");
                 await expect(input).toBeVisible();
                 await input.fill(solution);
                 await page.locator('input[type=submit]').click();
 
-                await takeData(`${description}-${index}`, imageHost, page);
+                await takeData(`${description}-${suffix}`, imageHost, page);
             }
         } else {
             await takeData(description, imageHost, page);
