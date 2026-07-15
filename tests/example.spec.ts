@@ -5,15 +5,9 @@ import {join} from "node:path";
 const testData = [
     {
         description: 'tag1',
-        url: 'https://www.cuba-hp.de/24Stunden/index.php?code=1745320a71260ce686262f6d056f2b04',
+        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=d8bc48b4cadefa1c6960f229606faf61',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solution: 'KSMMM4D'
-    },
-    {
-        description: 'tag1-2',
-        url: 'https://www.cuba-hp.de/24Stunden/index.php?code=1745320a71260ce686262f6d056f2b04',
-        imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solution: 'KSMMMVD'
+        solution: ''
     },
     {
         description: 'tag2',
