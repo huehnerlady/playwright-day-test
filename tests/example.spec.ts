@@ -24,13 +24,15 @@ const testData: TestData[] = [
     }
 ];
 
-const takeData = async (suffix: string, imageHost: string, page: Page): Promise<void> => {
+const takeData = async (suffix: string, imageHost: string, page: Page, onlyScreenshot: boolean = false): Promise<void> => {
     await page.screenshot({path: `screenshot-${suffix}.png`, fullPage: true});
-    let html = await page.content();
-    html = html.replace(/\.\/images/g, `${imageHost}/images`);
-    fs.writeFileSync(join(__dirname, `${suffix}.html`), html, {
-        flag: 'w',
-    });
+    if (!onlyScreenshot) {
+        let html = await page.content();
+        html = html.replace(/\.\/images/g, `${imageHost}/images`);
+        fs.writeFileSync(join(__dirname, `${suffix}.html`), html, {
+            flag: 'w',
+        });
+    }
 }
 
 
@@ -43,11 +45,12 @@ for (const {description, url, solutions, imageHost} of testData) {
         if (solutions.length > 0 && await input.count() > 0) {
             for (const solution of solutions) {
                 const suffix = solution.replace(/ /g, "_");
+                const dataSuffix = `${description}-${suffix}`
                 await expect(input).toBeVisible();
                 await input.fill(solution);
+                await takeData(`${dataSuffix}-before`, imageHost, page, true);
                 await page.locator('input[type=submit]').click();
-
-                await takeData(`${description}-${suffix}`, imageHost, page);
+                await takeData(dataSuffix, imageHost, page);
             }
         } else {
             await takeData(description, imageHost, page);
