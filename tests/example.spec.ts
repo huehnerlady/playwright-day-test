@@ -12,15 +12,15 @@ type TestData = {
 const testData: TestData[] = [
     {
         description: 'tag1',
-        url: 'https://www.cuba-hp.de/24Stunden/index.php?code=a25835f70eec26d389dbb12a75a4f13c',
+        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=a25835f70eec26d389dbb12a75a4f13c',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['']
+        solutions: ['Bärtiger', 'Bärtiger Mann', 'Weihnachtsmann', 'Santa Claws', 'Santa Claus']
     },
     {
         description: 'tag2',
         url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=d8456656c41b0c0b24a6527a0608d832',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions: ['489', '434']
+        solutions: ['434', '489']
     }
 ];
 
