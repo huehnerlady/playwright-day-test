@@ -57,7 +57,6 @@ for (const {description, url, solutions, imageHost} of testData) {
         }
     });
 }
-
 test('tag1-for', async ({page}) => {
     test.setTimeout(1200000);
     const testData: TestData = {
