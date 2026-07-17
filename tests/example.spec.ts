@@ -14,7 +14,7 @@ const testData: TestData[] = [
         description: 'tag1',
         url: 'https://www.cuba-hp.de/24Stunden/index.php?code=a25835f70eec26d389dbb12a75a4f13c',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: []
+        solutions: ['']
     },
     {
         description: 'tag2',
@@ -37,23 +37,22 @@ const takeData = async (suffix: string, imageHost: string, page: Page, onlyScree
 
 
 for (const {description, url, solutions, imageHost} of testData) {
-    test(description, async ({page}) => {
-        await page.goto(url);
+    test.describe(description, () => {
+        for (const solution of solutions) {
+            test(solution, async ({page}) => {
+                await page.goto(url);
+                const input = page.locator('input[type=text]');
 
-        const input = page.locator('input[type=text]');
-
-        if (solutions.length > 0 && await input.count() > 0) {
-            for (const solution of solutions) {
-                const suffix = solution.replace(/ /g, "_");
-                const dataSuffix = `${description}-${suffix}`
-                await expect(input).toBeVisible();
-                await input.fill(solution);
-                await takeData(`${dataSuffix}-before`, imageHost, page, true);
-                await page.locator('input[type=submit]').click();
-                await takeData(dataSuffix, imageHost, page);
-            }
-        } else {
-            await takeData(description, imageHost, page);
+                if (solution !== '' && await input.count() > 0) {
+                    const suffix = solution.replace(/ /g, "_");
+                    const dataSuffix = `${description}-${suffix}`
+                    await expect(input).toBeVisible();
+                    await input.fill(solution);
+                    await takeData(`${dataSuffix}-before`, imageHost, page, true);
+                    await page.locator('input[type=submit]').click();
+                }
+                await takeData(description, imageHost, page);
+            });
         }
     });
 }
