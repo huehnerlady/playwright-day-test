@@ -28,7 +28,7 @@ const takeData = async (suffix: string, imageHost: string, page: Page, onlyScree
     await page.screenshot({path: `screenshot-${suffix}.png`, fullPage: true});
     if (!onlyScreenshot) {
         let html = await page.content();
-        html = html.replace(/\.\/images/g, `${imageHost}/images`);
+        html = html.replace(/src="/g, `src="${imageHost}/`);
         fs.writeFileSync(join(__dirname, `${suffix}.html`), html, {
             flag: 'w',
         });
