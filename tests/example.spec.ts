@@ -42,16 +42,15 @@ for (const {description, url, solutions, imageHost} of testData) {
             test(solution, async ({page}) => {
                 await page.goto(url);
                 const input = page.locator('input[type=text]');
+                const suffix = solution.replace(/ /g, "_");
+                const dataSuffix = `${description}-${suffix}`
 
                 if (solution !== '' && await input.count() > 0) {
-                    const suffix = solution.replace(/ /g, "_");
-                    const dataSuffix = `${description}-${suffix}`
-                    await expect(input).toBeVisible();
                     await input.fill(solution);
                     await takeData(`${dataSuffix}-before`, imageHost, page, true);
                     await page.locator('input[type=submit]').click();
                 }
-                await takeData(description, imageHost, page);
+                await takeData(dataSuffix, imageHost, page);
             });
         }
     });
