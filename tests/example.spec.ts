@@ -12,9 +12,9 @@ type TestData = {
 const testData: TestData[] = [
     {
         description: 'tag1',
-        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=a25835f70eec26d389dbb12a75a4f13c',
+        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=c01c9b5bbbe9bc9f91bd4b1f21ed4d8b',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['Bärtiger', 'Bärtiger Mann', 'Weihnachtsmann', 'Santa Claws', 'Santa Claus']
+        solutions: ['']
     },
     {
         description: 'tag2',
