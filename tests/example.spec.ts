@@ -18,9 +18,9 @@ const testData: TestData[] = [
     },
     {
         description: 'tag2',
-        url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=d8456656c41b0c0b24a6527a0608d832',
+        url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=c8fcbdf2a1cd04c0ff86cea65121f08a',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions:['462']
+        solutions:['']
     }
 ];
 
