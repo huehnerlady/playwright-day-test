@@ -14,13 +14,13 @@ const testData: TestData[] = [
         description: 'tag1',
         url: 'http://www.cuba-hp.de/24Stunden/index.php?code=c01c9b5bbbe9bc9f91bd4b1f21ed4d8b',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['']
+        solutions: ['Trampantojos en El Vendrell', 'El Vendrell']
     },
     {
         description: 'tag2',
         url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=c8fcbdf2a1cd04c0ff86cea65121f08a',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions:['']
+        solutions:['Die unendliche Geschichte', 'OLAFS ORTE ODER KINDER?', 'OLAFS ORTE ODER KINDER']
     }
 ];
 
