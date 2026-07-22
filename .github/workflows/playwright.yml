@@ -26,7 +26,8 @@ jobs:
           echo "[$TS] ⏳ $i minute(s) remaining..."
           sleep 60
         done
-        echo "Done waiting. Continuing..."
+        TS=$(TZ="Europe/Berlin" date +"%H:%M:%S")
+        echo "[$TS]  "Done waiting. Continuing..."
     - uses: actions/checkout@v7.0.0
     - uses: actions/setup-node@v6.4.0
       with:
