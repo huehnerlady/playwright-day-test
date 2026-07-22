@@ -20,7 +20,7 @@ const testData: TestData[] = [
         description: 'tag2',
         url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=c8fcbdf2a1cd04c0ff86cea65121f08a',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions:['']
+        solutions: ['']
     }
 ];
 
@@ -42,7 +42,9 @@ for (const {description, url, solutions, imageHost} of testData) {
             test(solution, async ({page}) => {
                 await page.goto(url);
                 const input = page.locator('input[type=text]');
-                const suffix = solution.replace(/ /g, "_");
+                const suffix = solution
+                    .replace(/ /g, "_")
+                    .replace(/[":<>|*\?\r\n]/g, "");
                 const dataSuffix = `${description}-${suffix}`
 
                 if (solution !== '' && await input.count() > 0) {
