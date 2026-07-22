@@ -14,7 +14,7 @@ const testData: TestData[] = [
         description: 'tag1',
         url: 'http://www.cuba-hp.de/24Stunden/index.php?code=1788b0eca970a62b8477aecdcc8cd497',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['Der Tag, an dem die Musik starb']
+        solutions: ['Der Tag, an dem die Musik starb', '02-03-1959']
     },
     {
         description: 'tag2',
