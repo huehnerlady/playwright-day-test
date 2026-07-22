@@ -1,4 +1,4 @@
-import {test, expect, Page} from '@playwright/test';
+import {test, Page} from '@playwright/test';
 import * as fs from "node:fs";
 import {join} from "node:path";
 
@@ -44,7 +44,7 @@ for (const {description, url, solutions, imageHost} of testData) {
                 const input = page.locator('input[type=text]');
                 const suffix = solution
                     .replace(/ /g, "_")
-                    .replace(/[":<>|*\?\r\n]/g, "");
+                    .replace(/[":<>|*?\r\n]/g, "");
                 const dataSuffix = `${description}-${suffix}`
 
                 if (solution !== '' && await input.count() > 0) {
