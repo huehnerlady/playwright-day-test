@@ -9,12 +9,25 @@ type TestData = {
     solutions?: string[]
 }
 
+const generateTestData = (): string[] => {
+    const values = ['B', 'M', 'T']
+    let solutions: string[] = [];
+    for (const first in values) {
+        for (const second in values) {
+            for (const third in values) {
+                solutions.push(`LKS${first}LD${second}KB${third}BNH`)
+            }
+        }
+    }
+    return solutions;
+}
+
 const testData: TestData[] = [
     {
         description: 'tag1',
         url: 'http://www.cuba-hp.de/24Stunden/index.php?code=612da6eadc5adfe4ab27f25fa7780f7b',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['']
+        solutions: generateTestData()
     },
     {
         description: 'tag2',
