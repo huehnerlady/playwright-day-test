@@ -12,9 +12,9 @@ type TestData = {
 const testData: TestData[] = [
     {
         description: 'tag1',
-        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=1788b0eca970a62b8477aecdcc8cd497',
+        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=612da6eadc5adfe4ab27f25fa7780f7b',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['Der Tag, an dem die Musik starb', '02-03-1959']
+        solutions: ['']
     },
     {
         description: 'tag2',
