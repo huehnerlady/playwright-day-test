@@ -12,9 +12,9 @@ type TestData = {
 const generateTestData = (): string[] => {
     const values = ['B', 'M', 'T']
     let solutions: string[] = [];
-    for (const first in values) {
-        for (const second in values) {
-            for (const third in values) {
+    for (const first of values) {
+        for (const second of values) {
+            for (const third of values) {
                 solutions.push(`LKS${first}LD${second}KB${third}BNH`)
             }
         }
