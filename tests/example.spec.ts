@@ -10,7 +10,7 @@ type TestData = {
 }
 
 const generateTestData = (): string[] => {
-    const values = ['B', 'M', 'T']
+    const values = ['B', 'T']
     let solutions: string[] = [];
     for (const first of values) {
         for (const second of values) {
@@ -22,48 +22,12 @@ const generateTestData = (): string[] => {
     return solutions;
 }
 
-const generateAllPermutations = (letters: string[]): string[] => {
-    // Frequenzmap erzeugen
-    const freq: Record<string, number> = {};
-    for (const l of letters) {
-        freq[l] = (freq[l] ?? 0) + 1;
-    }
-
-    const result: string[] = [];
-    const current: string[] = [];
-    const totalLength = letters.length;
-
-    const backtrack = () => {
-        if (current.length === totalLength) {
-            result.push(current.join(""));
-            return;
-        }
-
-        for (const letter of Object.keys(freq)) {
-            if (freq[letter] > 0) {
-                freq[letter]--;
-                current.push(letter);
-
-                backtrack();
-
-                current.pop();
-                freq[letter]++;
-            }
-        }
-    };
-
-    backtrack();
-    return result;
-};
-
-const letters = ['B','B','B','D','D','H','K','K','L','L','M','N','S','T'];
-
 const testData: TestData[] = [
     {
         description: 'tag1',
-        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=612da6eadc5adfe4ab27f25fa7780f7b',
+        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=d4ace58596066a90ce5b0aefcd566947',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: generateAllPermutations(letters)
+        solutions: ['']
     },
     {
         description: 'tag2',
