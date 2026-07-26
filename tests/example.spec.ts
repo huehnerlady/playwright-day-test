@@ -27,7 +27,7 @@ const testData: TestData[] = [
         description: 'tag1',
         url: 'http://www.cuba-hp.de/24Stunden/index.php?code=d4ace58596066a90ce5b0aefcd566947',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['']
+        solutions: ['RFSHDKDBTEMKG']
     },
     {
         description: 'tag2',
