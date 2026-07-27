@@ -33,7 +33,7 @@ const testData: TestData[] = [
         description: 'tag2',
         url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=f7bcfdbf4059374fe5054e0f8f591c90',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions: ['SMARSLSHPTSBHBS']
+        solutions: ['SMARSLSHPTRBHBS']
     }
 ];
 
