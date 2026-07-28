@@ -25,9 +25,9 @@ const generateTestData = (): string[] => {
 const testData: TestData[] = [
     {
         description: 'tag1',
-        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=d4ace58596066a90ce5b0aefcd566947',
+        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=7ec1e1c1742ed99d8889399426626ae9',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['RFSHDKDBTEMKG']
+        solutions: ['']
     },
     {
         description: 'tag2',
