@@ -1,26 +1,7 @@
 import {test, Page} from '@playwright/test';
 import * as fs from "node:fs";
 import {join} from "node:path";
-
-type TestData = {
-    description: string,
-    url: string,
-    imageHost: string,
-    solutions?: string[]
-}
-
-const generateTestData = (): string[] => {
-    const values = ['B', 'T']
-    let solutions: string[] = [];
-    for (const first of values) {
-        for (const second of values) {
-            for (const third of values) {
-                solutions.push(`LKS${first}LD${second}KB${third}BNH`)
-            }
-        }
-    }
-    return solutions;
-}
+import {TestData} from "./utils";
 
 const testData: TestData[] = [
     {
