@@ -8,7 +8,7 @@ on:
         required: false
         type: number
   schedule:
-    - cron: "17,47 4,5,11,12 * * *"
+    - cron: "17,47 3,4,5,11,12 * * *"
 jobs:
   test:
     timeout-minutes: 360
