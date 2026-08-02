@@ -8,13 +8,13 @@ const testData: TestData[] = [
         description: 'tag1',
         url: 'https://www.cuba-hp.de/24Stunden/index.php?code=4b473350faefa6991ed520909d18f6c7',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['Das Wörterbuch', 'Wörterbuch', 'Duden']
+        solutions: ['']
     },
     {
         description: 'tag2',
         url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=188264781fbce1cd02074bcc6ce9052c',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions: ['32674']
+        solutions: ['32876']
     }
 ];
 
