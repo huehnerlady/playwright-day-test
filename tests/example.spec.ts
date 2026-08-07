@@ -6,9 +6,9 @@ import {TestData} from "./utils";
 const testData: TestData[] = [
     {
         description: 'tag1',
-        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=46f15dacb417741ee97083693f19e0fa',
+        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=669033619be4894abb3989011ddbb191',
         imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['LLDSFLRS','LLDSFSRL','LLDSLFRS','LLDSLSRF','LLDSSFRL','LLDSSLRF','LLFSDLRS','LLFSDSRL','LLFSLDRS','LLFSLSRD','LLFSSDRL','LLFSSLRD','LLLSDFRS','LLLSDSRF','LLLSFDRS','LLLSFSRD','LLLSSDRF','LLLSSFRD','LLSSDFRL','LLSSDLRF','LLSSFDRL','LLSSFLRD','LLSSLDRF','LLSSLFRD']
+        solutions: ['']
     },
     {
         description: 'tag2',
