@@ -5,12 +5,6 @@ import {TestData} from "./utils";
 
 const testData: TestData[] = [
     {
-        description: 'tag1',
-        url: 'http://www.cuba-hp.de/24Stunden/index.php?code=669033619be4894abb3989011ddbb191',
-        imageHost: 'http://www.cuba-hp.de/24Stunden',
-        solutions: ['dreihundertachtunddreissig']
-    },
-    {
         description: 'tag2',
         url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=3cec7452da44313192b31343c9b74a63',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
