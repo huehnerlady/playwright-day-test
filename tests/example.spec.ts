@@ -6,34 +6,9 @@ import {TestData} from "./utils";
 const testData: TestData[] = [
     {
         description: 'tag2',
-        url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=3cec7452da44313192b31343c9b74a63',
+        url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=f21ac9f3543765f2acbedb493d2fafa9',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions: [
-  "DCMLIGRJPS",
-  "DCMLIGRJSP",
-  "DCMLIPRJGS",
-  "DCMLIPRJSG",
-  "DCMLISRJGP",
-  "DCMLISRJPG",
-  "DGMLICRJPS",
-  "DGMLICRJSP",
-  "DGMLIPRJCS",
-  "DGMLIPRJSC",
-  "DGMLISRJCP",
-  "DGMLISRJPC",
-  "DPMLICRJGS",
-  "DPMLICRJSG",
-  "DPMLIGRJCS",
-  "DPMLIGRJSC",
-  "DPMLISRJCG",
-  "DPMLISRJGC",
-  "DSMLICRJGP",
-  "DSMLICRJPG",
-  "DSMLIGRJCP",
-  "DSMLIGRJPC",
-  "DSMLIPRJCG",
-  "DSMLIPRJGC"
-]
+        solutions: ['']
     }
 ];
 
