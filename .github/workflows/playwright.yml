@@ -7,8 +7,8 @@ on:
         description: "Optional waiting time in minutes, maximum of 6 hours (360)"
         required: false
         type: number
-  schedule:
-    - cron: "17,47 5,6,7,8,11,12,13,14 * * *"
+#  schedule:
+ #   - cron: "17,47 5,6,7,8,11,12,13,14 * * *"
 jobs:
   test:
     timeout-minutes: 360
