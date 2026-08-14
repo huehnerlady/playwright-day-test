@@ -64,7 +64,7 @@ for (const {description, url, solutions, imageHost} of testData) {
 
                 if (solution !== '' && await input.count() > 0) {
                     await input.fill(solution);
-                    await takeData(`before-${dataSuffix}`, imageHost, page, true);
+                    // await takeData(`before-${dataSuffix}`, imageHost, page, true);
                     await page.locator('input[type=submit]').click();
                 }
                 await takeData(dataSuffix, imageHost, page);
