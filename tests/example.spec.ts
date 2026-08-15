@@ -6,7 +6,7 @@ import {TestData} from "./utils";
 const testData: TestData[] = [
     {
         description: 'tag2',
-        url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=b8830b9b8a1d7e450536017034ef4c70',
+        url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=ee740a99bc69d07e7c5c9a6f328f7d00',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
         solutions: [""]
     }
