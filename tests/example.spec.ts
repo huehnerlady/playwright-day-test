@@ -8,8 +8,14 @@ const testData: TestData[] = [
         description: 'tag2',
         url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=f21ac9f3543765f2acbedb493d2fafa9',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
+        solutions: ["LKSWZ"]
+    },
+    {
+        description: 'tag2-alle',
+        url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=f21ac9f3543765f2acbedb493d2fafa9',
+        imageHost: 'http://www.cuba-hp.de/24Stunden2',
         solutions: [
-            "LKAWZ","LKBWZ","LKCWZ","LKDWZ","LKEWZ","LKFWZ","LKGWZ","LKHWZ","LKIWZ","LKJWZ","LKKWZ","LKLWZ","LKMWZ","LKNWZ","LKOWZ","LKPWZ","LKQWZ","LKRWZ","LKSWZ","LKTWZ","LKUWZ","LKVWZ","LKWWZ","LKXWZ","LKYWZ","LKZWZ"
+            "LKAWZ","LKBWZ","LKCWZ","LKDWZ","LKEWZ","LKFWZ","LKGWZ","LKHWZ","LKIWZ","LKJWZ","LKKWZ","LKLWZ","LKMWZ","LKNWZ","LKOWZ","LKPWZ","LKQWZ","LKRWZ","LKTWZ","LKUWZ","LKVWZ","LKWWZ","LKXWZ","LKYWZ","LKZWZ"
         ]
     }
 ];
