@@ -9,7 +9,7 @@ const testData: TestData[] = [
         url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=f21ac9f3543765f2acbedb493d2fafa9',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
         solutions: [
-            "LKAWS","LKBWS","LKCWS","LKDWS","LKEWS","LKFWS","LKGWS","LKHWS","LKIWS","LKJWS","LKKWS","LKLWS","LKMWS","LKNWS","LKOWS","LKPWS","LKQWS","LKRWS","LKSWS","LKTWS","LKUWS","LKVWS","LKWWS","LKXWS","LKYWS","LKZWS"
+            "LKAWZ","LKBWZ","LKCWZ","LKDWZ","LKEWZ","LKFWZ","LKGWZ","LKHWZ","LKIWZ","LKJWZ","LKKWZ","LKLWZ","LKMWZ","LKNWZ","LKOWZ","LKPWZ","LKQWZ","LKRWZ","LKSWZ","LKTWZ","LKUWZ","LKVWZ","LKWWZ","LKXWZ","LKYWZ","LKZWZ"
         ]
     }
 ];
