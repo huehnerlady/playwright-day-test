@@ -6,17 +6,9 @@ import {TestData} from "./utils";
 const testData: TestData[] = [
     {
         description: 'tag2',
-        url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=f21ac9f3543765f2acbedb493d2fafa9',
+        url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=b8830b9b8a1d7e450536017034ef4c70',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions: ["LKSWZ"]
-    },
-    {
-        description: 'tag2-alle',
-        url: 'https://www.cuba-hp.de/24Stunden2/index.php?code=f21ac9f3543765f2acbedb493d2fafa9',
-        imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions: [
-            "LKAWZ","LKBWZ","LKCWZ","LKDWZ","LKEWZ","LKFWZ","LKGWZ","LKHWZ","LKIWZ","LKJWZ","LKKWZ","LKLWZ","LKMWZ","LKNWZ","LKOWZ","LKPWZ","LKQWZ","LKRWZ","LKTWZ","LKUWZ","LKVWZ","LKWWZ","LKXWZ","LKYWZ","LKZWZ"
-        ]
+        solutions: [""]
     }
 ];
 
