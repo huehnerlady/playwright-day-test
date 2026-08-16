@@ -8,7 +8,7 @@ const testData: TestData[] = [
         description: 'tag2',
         url: 'http://www.cuba-hp.de/24Stunden2/index.php?code=4cb807a87bac2e6a42a0e493bba9ab13',
         imageHost: 'http://www.cuba-hp.de/24Stunden2',
-        solutions: [""]
+        solutions: ["WURMLOCH"]
     }
 ];
 
